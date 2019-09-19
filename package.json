@@ -5,6 +5,7 @@
   "author": "pulabio <pulabio@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "build": "webpack --mode production",
     "dev": "webpack-dev-server --mode development"
   },
   "devDependencies": {
