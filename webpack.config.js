@@ -10,7 +10,13 @@ module.exports = {
   },
   module: {
     rules: [
-      
+      {
+        test: /\.js$/, //file ended in .js. This is a RegEx
+        exclude: /node_modules/, //Don't transpile imported modules (from node_modules folder)
+        use:{
+          loader: 'babel-loader'
+        }
+      }
     ]
   }
-}
+};
