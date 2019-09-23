@@ -8,4 +8,9 @@ function TechItem({ tech, handleDelete }){
   </li>
   )
 }
+
+TechItem.defaultProps = {
+  tech: 'Tech not informed',
+};
+
 export default TechItem
