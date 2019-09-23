@@ -1,5 +1,7 @@
 import React from "react";
 
+import PropTypes from 'prop-types';
+
 function TechItem({ tech, handleDelete }){
   return(
     <li key={tech}>
@@ -12,5 +14,10 @@ function TechItem({ tech, handleDelete }){
 TechItem.defaultProps = {
   tech: 'Tech not informed',
 };
+
+TechItem.propTypes = {
+  tech: PropTypes.string,
+  handleDelete: PropTypes.func.isRequired
+}
 
 export default TechItem
